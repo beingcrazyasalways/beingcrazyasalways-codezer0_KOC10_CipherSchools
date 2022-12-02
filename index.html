@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animeguru | Anime Merchandise </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!--making header-->
+<div class="header">
+    <div class="container">
+
+        <!--making navigation bar consist of logo and menu links-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" alt="AnimeGuru Logo" width="125px"></a>
+            </div>
+            <!--menu-->
+            <nav>
+                <ul id="MenuItems"><!--use this id in js-->
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>   
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
+                <img src="images/menu1.png" class="menu-icon" onclick="menutoggle()"width="30px"height=
+                '30px'>
+        </div>
+
+
+        <!--making another section in header class container-->
+        <div class="row">
+
+
+            <!--dividing this section into 2 columns-->
+            <!--1st column for heading button and text-->
+            <div class="col-2">
+                <h1>Exclusive Anime Merch<br>Now in India!</h1>
+                <p>"When you give up,that's when the game ends."</p>
+                <a href="Products.html"class="btn">Explore Now &#8594;</a><!--where &#8594 is the code of arrow icon in explore now button-->
+            </div>
+
+            <!--2nd for image-->
+            <div class="col-2">
+                <img src="images/animerch.jpg">
+            </div>
+
+        </div>
+    </div>  
+</div>
+   <!-------------- featured categories -----------> 
+   <!--categories class to edit whole section, then small container class to edit whole row, then row class to edit area surrounding images, then col-3 class to edit col of each image then col-3 img used in css to edit image -->
+   <div class="categories">
+       <!--we will create 3 column for 3 images at a time in single row like we did above by making 2 columns-->
+
+        <!--small container class contains row which consist of whole columns sections then col-3 which consist of col of images-->
+    <div class="small-container">,<!--container class to edit images section-->
+        <div class="row">
+            <!--3 columns for 3 images-->
+            <div class="col-3">
+                <img src="images/c1.png"width="300px" >
+            </div>
+            <div class="col-3">
+                <img src="images/c2.png"width="300px" >
+            </div>
+            <div class="col-3">
+                <img src="images/c3.png" width="300px">
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Featured products---------->
+<!--using same class small container to maintain same styling-->
+   <div class="small-container">
+    <!--using again same row class to maintain same styling -->
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+         <!--this time we will make 4 columns-->
+     
+        <!--it contains 4 different products with heading h4, image, price <p> and rating star-->
+        <div class="col-4">
+            <a href="productdetails.html"><img src="images/p1.png">
+            </a>    <!--product img-->
+            <a href="productdetails.html"><h4> Uchicha Itachi Graphic Printed Oversized T-shirt</h4></a><!--product title-->
+            <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+            </div>
+            <p>₹350.00</p>      
+        </div>
+
+
+        <div class="col-4">
+            <img src="images/p2.png" >
+            <h4> Naruto Themed Slim-Fit Joggers</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>      
+            </div>
+            <p>₹300.00</p>      
+        </div>
+        <div class="col-4">
+            <img src="images/p3.png" >
+            <h4> Uchicha Itachi Graphic Printed Sneakers</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+            </div>
+            <p>₹599.00</p>      
+        </div>
+        <div class="col-4">
+            <img src="images/p4.png" >
+            <h4>Naruto Clan Symbol Necklace </h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+            </div>
+            <p>₹399.00</p>      
+        </div>
+    </div>
+ <!--------Latest Products----------->
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+    <!--this time we will make 4 columns-->
+     
+    <!--it contains 4 different products with heading h4, image, price <p> and rating star-->
+        <div class="col-4">
+            <img src="images/lp1.jpg" >
+            <h4> Jujutsu Kaisen graphic printed Hoodie</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+            </div>
+            <p>₹499.00</p>      
+        </div>
+        <div class="col-4">
+            <img src="images/lp2.jpg" >
+            <h4> Demon Slayers Themed Slim-Fit Joggers</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>      
+            </div>
+            <p>₹399.00</p>      
+        </div>
+        <div class="col-4">
+            <img src="images/lp3.jpg" >
+            <h4> Aot Graphic Printed Jacket-hoodie</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+            </div>
+            <p>₹899.00</p>      
+        </div>
+        <div class="col-4">
+            <img src="images/lp4.jpg" >
+            <h4>Naruto Clan Symbol Duo Ring </h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+            </div>
+            <p>₹299.00</p>
+
+        </div>
+        <div class="row">
+        <div class="col-4">
+                <img src="images/lp5.png" >
+                <h4> Borushiki Fused Graphic printed Sneakers</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+                </div>
+                <p>₹1450.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/lp6.jpg" >
+                <h4> Attack on Titans Scout Watch</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>      
+                </div>
+                <p>₹399.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/lp7.gif" >
+                <h4> Luffy 3d printed Stickers</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star-half-stroke"style="color:#ff523b"></i>
+                </div>
+                <p>₹69.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/lp8.gif" >
+                <h4>Jujutsu Kaisen 3d wall posters</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+                </div>
+                <p>₹799.00</p>      
+        </div>
+    </div>
+</div>
+<!--offer-->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            
+            <div class="col-2">
+               <img src="images/ex1.png" class="offer-img"> 
+            </div>
+
+            <div class="col-2">
+                <p>Exclusively Available on AnimeGuru</p>
+                <h1>Special Manga Combo box.</h1>
+                <small>
+                    Exclusive manga box consisting not just one or two but seven different Manga volumes  of most popular series including My Hero Academia,One Piece, Dragon Ball-Z, Demon Slayers and many more.
+                </small>
+                <a href="" class="btn">Buy Now &#8594;</a><!--where &#8594 is the code of arrow icon in explore now button-->
+                
+            </div>
+        </div>
+    </div>
+</div>
+        <!-------footer------->
+        <div class="footer">
+            <div class="container"><!-- it will follow same styling as of header-->
+                <div class="row">
+                
+                    <!--it contains 4 columns col1 contains text and col2 contain image col3 contains useful links and col4 contains social media links-->
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and Ios mobile phone.</p>
+                   
+                   <!---add images of play store and appstore in 1st column-->
+                        <div class="app-logo">
+                            <img src="images/app1.png">
+                            <img src="images/app2.png">
+                        </div>   
+                
+                    </div>
+
+                    <div class="footer-col-2">
+                        <img src="images/logo1.png">
+                        <p>AnimeGuru is a retail experience created for the otakus by the otakus. We carry anime apparel, accessories, and more from the biggest names in anime like Dragon Ball Z, One piece, My Hero Academia, Naruto, and many more.</p>
+                    </div>
+
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    
+                    </div>
+                </div>
+                <!--add horizontal line and copyright text along with clickable link-->
+            <hr>
+            <a href="" class="copyright">Copyright © 2022 AnimeGuru Inc. All rights reserved by Surya</a>
+        </div>
+    </div>
+    <!-----------------JS[TOTALLY TAKEN FROM GOOGLE]-------------->
+    <script>
+        //declare variable MenuItems which take ul having id "MenuItems"
+        
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";//by default, we have set menu or dropdown menu height to 0px, means it is close by default
+        
+        function menutoggle()//this is the function which we have called above in nav which works on small devices and users click on it
+        {
+            if (MenuItems.style.maxHeight =="0px")//when user click on it and if it is closed or its height is 0px, then it will open or it should have heigt of 200px upon clicking
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else//if user not clicked or it has already opened, then it will upon clicking again closed
+            {
+                MenuItems.style.maxHeight = "0px" 
+            }
+        
+        }
+    </script>
+
+</body>
+
+
+</html>

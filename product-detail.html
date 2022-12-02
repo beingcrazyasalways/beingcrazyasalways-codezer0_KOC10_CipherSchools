@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products- AnimeGuru</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <!--making header-->
+
+    <div class="container">
+
+        <!--making navigation bar consist of logo and menu links-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" alt="AnimeGuru Logo" width="125px"></a>
+            </div>
+            <!--menu-->
+            <nav>
+                <ul id="MenuItems"><!--use this id in js-->
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>   
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
+                <img src="images/menu1.png" class="menu-icon" onclick="menutoggle()"width="30px"height=
+                '30px'>
+        </div>
+    </div> 
+<!-----single product details------->
+
+<div class="small-container single-product">  
+        <div class="row">
+            <div class="col-2">
+                <img src="images/p1.png" width="100%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="smal-img-col">
+                        <img src="images/ut1.png" width="100%"class="small-img">
+                    </div>
+                    <div class="smal-img-col">
+                        <img src="images/ut2.png" width="100%"class="small-img">
+                    </div>
+                    <div class="smal-img-col">
+                        <img src="images/ut3.png" width="100%"class="small-img">
+                    </div>
+                    <div class="smal-img-col">
+                        <img src="images/ut4.png" width="100%"class="small-img">
+                    </div>
+                    <div class="smal-img-col">
+                        <img src="images/ut5.png" width="100%"class="small-img">
+                    </div>
+                </div>
+        </div> 
+        <div class="col-2">
+            <p>Home/ T-shirt</p>
+            <h1>Uchicha Itachi Graphic Printed Oversized T-shirt</h1>
+            <h4>₹350.00</h4>
+            <select>
+                <option>Select Size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+            </select>
+            <input type="number"value="1">
+            <a href="cart.html"class="btn">Add to cart</a>
+            
+            <h3>Product Details <i class="fa-solid fa-indent"style="color:#ff523b"></i></h3>
+            <br>
+            <p>Be ready to look the part with this Itachi Symbols Naruto gear. This anime T-shirt features an Itachi front screen print surrounded by Japanese characters. Enjoy geeking out while wearing our Naruto anime merch.
+            </p>
+        </div>
+    </div>
+</div>
+  <!------------title------------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>  
+</div>
+
+    <div class="row">
+         <!--this time we will make 4 columns-->
+     
+        <!--it contains 4 different products with heading h4, image, price <p> and rating star-->
+        <div class="col-4">
+            <a href="product-detail.html"></a><img src="images/p2.png"><!--product img--></a><!--product img-->
+            <a href="product-detail.html"></a><h4>Naruto Themed Slim-Fit Joggers</h4></a><!--product title-->
+            <div class="rating"><!--add stars for rating of product from font awesome 4-->
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+            </div>
+            <p>₹350.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/p7.jpg" >
+                <h4>Jujutsu Kaisen 3d wall posters</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+                </div>
+                <p>₹799.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/p8.jpg" >
+                <h4>Jujutsu Kaisen 3d wall posters</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+                </div>
+                <p>₹799.00</p>      
+        </div>
+        <div class="col-4">
+                <img src="images/p9.png" >
+                <h4>Jujutsu Kaisen 3d wall posters</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-solid fa-star"style="color:#ff523b"></i>
+                    <i class="fa-regular fa-star"style="color:#ff523b"></i>   
+                </div>
+                <p>₹799.00</p>      
+        </div>   
+    </div>
+        
+</div>
+ 
+<!-----------footer--------->
+    <div class="footer">
+        <div class="container"><!-- it will follow same styling as of header-->
+            <div class="row">
+                <!--it contains 4 columns col1 contains text and col2 contain image col3 contains useful links and col4 contains social media links-->
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <!---add images of play store and appstore in 1st column-->
+                    <div class="app-logo">
+                        <img src="images/app1.png">
+                        <img src="images/app2.png">
+                    </div> 
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/logo1.png">
+                    <p>AnimeGuru is a retail experience created for the otakus by the otakus. We carry anime apparel, accessories, and more from the biggest names in anime like Dragon Ball Z, One piece, My Hero Academia, Naruto, and many more.  </p>
+                </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>  
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>    
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            <!--add horizontal line and copyright text along with clickable link-->
+            <hr>
+            <a href="" class="copyright">Copyright 2022 Made by Suryansh</a>
+        </div>
+    </div>
+    <!-----------------JS[TOTALLY TAKEN FROM GOOGLE]-------------->
+    <script>
+        //declare variable MenuItems which take ul having id "MenuItems"
+        
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";//by default, we have set menu or dropdown menu height to 0px, means it is close by default
+        
+        function menutoggle()//this is the function which we have called above in nav which works on small devices and users click on it
+        {
+            if (MenuItems.style.maxHeight =="0px")//when user click on it and if it is closed or its height is 0px, then it will open or it should have heigt of 200px upon clicking
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else//if user not clicked or it has already opened, then it will upon clicking again closed
+            {
+                MenuItems.style.maxHeight = "0px" 
+            }
+        
+        }
+    </script>
+
+<!-------------------js for product gallery---------->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+            SmallImg[0].onclick = function()//when user click on first image or images at 0 index, it will display as ProdcutImg.src replace with clicked or SmallImg[0], so we get smallimg[0] in bigger form, similarly when click on smallimg[1], it will display in bigger picture and so on 
+            {
+                ProductImg.src = SmallImg[0].src;   
+            }
+
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;   
+            }
+
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;   
+            }
+
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;   
+            }
+            SmallImg[4].onclick = function()
+            {
+                ProductImg.src = SmallImg[4].src;   
+            }
+
+        
+    </script>
+
+</body>
+
+
+
+</html>

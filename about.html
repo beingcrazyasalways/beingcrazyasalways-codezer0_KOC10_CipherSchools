@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--making header-->
+
+    <div class="container">
+
+        <!--making navigation bar consist of logo and menu links-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo1.png" alt="AnimeGuru Logo" width="125px"></a>
+            </div>
+            <!--menu-->
+            <nav>
+                <ul id="MenuItems"><!--use this id in js-->
+                    <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>   
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" alt="cart" width=30px height=30px></a><!--adding cart image in navigation section -->
+                <img src="images/menu1.png" class="menu-icon" onclick="menutoggle()"width="30px"height=
+                '30px'>
+        </div>
+    </div> 
+<!--------about Page---------------->
+<div class="about-section">
+    <h1>About Us Page</h1>
+    <p1>AnimeGuru is a retail experience created for the otakus by the otakus.</p1>
+    <br>
+    <br>
+    <p1>We started AnimeGuru to create one stop shop for all Indian anime fans to find cool anime goods — because there wasn’t one with the good quality products. We’re all about experience, lifestyle, and bringing anime into the bigger conversation.</p1>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/div.png" alt="Dheeru" style="width: 100%">
+      <div class="container">
+        <h2>Divesh</h2>
+        <p class="title">Developer</p>
+        <p>Section- KOC10</p>
+        <p>Roll no.- 019</p>
+        <p>Admission no.- 12215276</p>
+        <p>itsdivesh221@gmail.com</p>
+        <p><a href="mailto: itsdivesh221@gmail.com"class="btn">Contact</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/shiv.png" alt="Suryansh" style="width:100%">
+      <div class="container">
+        <h2>Suryansh</h2>
+        <p class="title">Developer</p>
+        <p>Section- KOC10</p>
+        <p>Roll no.- 05</p>
+        <p>Admission no.- 12215058</p>
+        <p>suryanshk2004@gmail.com</p>
+        <p><a href="mailto: itsdivesh221@gmail.com"class="btn">Contact</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/moh.png" alt="Mohak" style="width:100%">
+      <div class="container">
+        <h2>Mohak</h2>
+        <p class="title">Developer </p>
+        <p>Section- KOC10</p>
+        <p>Roll no.- 024</p>
+        <p>Admission no.- 12215963</p>
+        <p>mohak.khandu@gmail.com</p>
+        <p><a href="mohak.khandu@gmail.com"class="btn">Contact</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-----------------JS[TAKEN FROM GOOGLE]-------------->
+    <script>
+        //declare variable MenuItems which take ul having id "MenuItems"
+        
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";//by default, we have set menu or dropdown menu height to 0px, means it is close by default
+        
+        function menutoggle()//this is the function which we have called above in nav which works on small devices and users click on it
+        {
+            if (MenuItems.style.maxHeight =="0px")//when user click on it and if it is closed or its height is 0px, then it will open or it should have heigt of 200px upon clicking
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else//if user not clicked or it has already opened, then it will upon clicking again closed
+            {
+                MenuItems.style.maxHeight = "0px" 
+            }
+        
+        }
+    </script>
+
+</body>
+</html>
